@@ -1,0 +1,41 @@
+# basic configuration
+backend = "glx";
+vsync = "opengl-swc"; 
+
+#Shadow
+shadow = true;
+no-dnd-shadow = true;
+no-dock-shadow = false;
+clear-shadow = true;
+shadow-radius = 10;
+shadow-offset-x = -15;
+shadow-offset-y = -15;
+shadow-opacity = 0.7;
+
+# shadow-red = 0.0;
+# shadow-green = 0.0;
+# shadow-blue = 0.0;
+
+ shadow-exclude = [
+    "name = 'Notification'",
+    "class_g = 'Conky'",
+    "class_g ?= 'Notify-osd'",
+    "class_g = 'Cairo-clock'",
+    "_GTK_FRAME_EXTENTS@:c",
+    # apply enkel shadows op context menus en polybar
+    "class_g != 'Polybar' && window_type !*= 'menu'"
+ ];
+
+# shadow-exclude = "n:e:Notification";
+# shadow-exclude-reg = "x10+0+0";
+# xinerama-shadow-crop = true;
+
+#Fading
+fading = true;
+# fade-delta = 30;
+fade-in-step = 0.2;
+fade-out-step = 0.2;
+#no-fading-openclose = true;
+#no-fading-destroyed-argb = true;
+fade-exclude = [ ];
+
