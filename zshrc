@@ -8,7 +8,7 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="avit"
+ZSH_THEME="fortune"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -104,3 +104,6 @@ alias o='/home/kobe/scripts/xdgopen'
 alias q='/home/kobe/scripts/open_and_quit.sh'
 alias 2048='/home/kobe/2048-cli/2048 -c'
 source $HOME/.cargo/env
+
+fortune -s
+echo "\n"
