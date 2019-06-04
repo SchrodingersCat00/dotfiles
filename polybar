@@ -66,7 +66,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = i3
-modules-center = spotify 
+modules-center = spotify
 modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 tray-position = right
@@ -455,6 +455,17 @@ format-prefix = " "
 format = <label>
 exec = python3 /home/kobe/polybar-spotify/spotify_status.py -f '{play_pause} {artist}: {song}'
 
+[module/helloworld]
+type = custom/script
+interval = 1
+format = <label>
+exec = python3 /home/kobe/temp/hello.py
+
+[module/package-updates]
+type = custom/script
+exec = ~/polybar-scripts/updates-debian.sh
+interval = 600
+
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -467,3 +478,10 @@ margin-top = 5
 margin-bottom = 5
 
 ; vim:ft=dosini
+
+[module/system-usb-udev]
+type = custom/script
+exec = ~/polybar-scripts/system-usb-udev.sh
+tail = true
+click-left = ~/polybar-scripts/system-usb-udev.sh --mount
+click-right = ~/polybar-scripts/system-usb-udev.sh --unmount
