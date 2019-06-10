@@ -172,8 +172,8 @@ assign [class="Rambox"] 4
 # Gaps
 for_window [class="^.*"] border pixel 0 
 for_window [floating] border full
-gaps inner 10 
-gaps outer 10
+gaps inner 4 
+gaps outer 0
 # Removes gaps if only one window is present
 smart_gaps on 
 # Hides borders is only one window is present
