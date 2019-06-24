@@ -167,8 +167,6 @@ bindsym $mod+r mode "resize"
 #                                                 |___/     
 
 # Assign workspaces
-assign [class="Rambox"] 4
-
 # Gaps
 for_window [class="^.*"] border pixel 0 
 for_window [floating] border full
