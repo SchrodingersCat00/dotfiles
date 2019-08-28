@@ -105,5 +105,21 @@ alias q='/home/kobe/scripts/open_and_quit.sh'
 alias 2048='/home/kobe/2048-cli/2048 -c'
 source $HOME/.cargo/env
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/kobe/miniconda2/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/kobe/miniconda2/etc/profile.d/conda.sh" ]; then
+        . "/home/kobe/miniconda2/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/kobe/miniconda2/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
 fortune -s
 echo "\n"
