@@ -123,3 +123,5 @@ unset __conda_setup
 
 fortune -s
 echo "\n"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

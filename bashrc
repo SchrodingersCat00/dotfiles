@@ -205,3 +205,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export PATH="$HOME/.rbenv/bin:$PATH"
