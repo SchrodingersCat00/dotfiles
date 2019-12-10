@@ -206,3 +206,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH=/opt/Qt/5.9.4/gcc_64/bin:$PATH

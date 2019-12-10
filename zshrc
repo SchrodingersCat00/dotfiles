@@ -68,7 +68,10 @@ ZSH_THEME="fortune"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+    git
+    extract
+    )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -125,3 +128,10 @@ fortune -s
 echo "\n"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+export PATH=/opt/Qt/5.9.4/gcc_64/bin:$PATH
+
+# opam configuration
+test -r /home/kobe/.opam/opam-init/init.zsh && . /home/kobe/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+alias pyth="python3 /home/kobe/UGent/projects/pyth/pyth.py"
