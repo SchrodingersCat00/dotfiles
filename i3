@@ -31,7 +31,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty 
 
 # kill focused window
 bindsym $mod+Shift+a kill
@@ -183,7 +183,7 @@ exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput 
 exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Accel Speed' 0.954167
 
 # Startup programs
-exec --no-startup-id hsetroot -fill ~/Pictures/backgrounds/background5_gradient.jpg
+exec --no-startup-id feh --bg-fill ~/Downloads/tys134yp8u341.jpg
 exec --no-startup-id ulauncher --hide-window
 exec --no-startup-id ~/scripts/init_workspace.sh
 exec --no-startup-id mopidy
@@ -213,16 +213,12 @@ bindsym XF86MonBrightnessDown exec light -U 15
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh
 
 # i3lock
-bindsym $mod+l exec i3lock -i ~/Pictures/backgrounds/lock_screen.png -u
+bindsym $mod+l exec i3lock -i ~/Downloads/tys134yp8u341.png -u
 
 # Open Browser
 bindsym $mod+b exec firefox
-bindsym $mod+m exec firefox minerva.ugent.be
 
 # Youtube mini player
 bindsym $mod+y floating toggle; resize set 320 200; sticky toggle; move window to position 1600 5;
 
-# TODO make this work!
-# Screenshot tool
-bindsym $mod+c exec screenshot-tool -r
 
