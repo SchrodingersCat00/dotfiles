@@ -1,12 +1,11 @@
 # basic configuration
 backend = "glx";
-vsync = "opengl-swc"; 
+vsync = true; 
 
 #Shadow
 shadow = true;
 no-dnd-shadow = true;
 no-dock-shadow = false;
-clear-shadow = true;
 shadow-radius = 10;
 shadow-offset-x = -15;
 shadow-offset-y = -15;
