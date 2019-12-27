@@ -169,7 +169,7 @@ bindsym $mod+r mode "resize"
 # Assign workspaces
 # Gaps
 for_window [class="^.*"] border pixel 0 
-for_window [floating] border full
+for_window [floating] border full 
 gaps inner 4 
 gaps outer 0
 # Removes gaps if only one window is present
@@ -180,7 +180,7 @@ hide_edge_borders smart
 # Touchpad
 exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Tapping Enabled' 1
 exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Natural Scrolling Enabled' 1 
-exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Accel Speed' 0.954167
+exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Accel Speed' 0.854167
 
 # Startup programs
 exec --no-startup-id feh --bg-fill ~/Downloads/tys134yp8u341.jpg
@@ -221,4 +221,6 @@ bindsym $mod+b exec firefox
 # Youtube mini player
 bindsym $mod+y floating toggle; resize set 320 200; sticky toggle; move window to position 1600 5;
 
+# Flameshot screenshot
+bindsym $mod+c exec flameshot gui
 

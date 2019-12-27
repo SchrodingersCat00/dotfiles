@@ -67,7 +67,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = spotify
-modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = filesystem pulseaudio package_updates memory cpu wlan eth battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -485,3 +485,10 @@ exec = ~/polybar-scripts/system-usb-udev.sh
 tail = true
 click-left = ~/polybar-scripts/system-usb-udev.sh --mount
 click-right = ~/polybar-scripts/system-usb-udev.sh --unmount
+
+
+[module/package_updates]
+type = custom/script
+exec = ~/dotfiles/scripts/package_updates
+interval = 600
+label-underline = #D3869B
