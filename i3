@@ -224,3 +224,6 @@ bindsym $mod+y floating toggle; resize set 320 200; sticky toggle; move window t
 # Flameshot screenshot
 bindsym $mod+c exec flameshot gui
 
+# Media player controls
+bindsym $mod+p exec playerctl play-pause
+bindsym $mod+n exec playerctl next
