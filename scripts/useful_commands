@@ -1,0 +1,8 @@
+# These are some useful commands that i keep forgetting
+
+z
+ln -sv source target
+du -h / | sort -rh
+df <- list disk space
+neofetch <- show pc information
+
