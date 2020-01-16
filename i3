@@ -183,7 +183,7 @@ exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput 
 exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Accel Speed' 0.854167
 
 # Startup programs
-exec --no-startup-id feh --bg-fill ~/Downloads/tys134yp8u341.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/alena-aenami-horizon-1k_vignette.jpg
 exec --no-startup-id ulauncher --hide-window
 exec --no-startup-id ~/scripts/init_workspace.sh
 exec --no-startup-id mopidy
@@ -205,9 +205,9 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 'alsa_output.pci-
 
 # Sreen brightness controls
 # Increase screen brightness
-bindsym XF86MonBrightnessUp exec light -A 15
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 # Decrease screen brightness
-bindsym XF86MonBrightnessDown exec light -U 15 
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 # Touchpad controls
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh
