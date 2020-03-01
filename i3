@@ -183,7 +183,7 @@ exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput 
 exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Accel Speed' 0.854167
 
 # Startup programs
-exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/alena-aenami-horizon-1k_vignette.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/florianne-becker-chouquette-ssnail10small.jpg 
 exec --no-startup-id ulauncher --hide-window
 exec --no-startup-id ~/scripts/init_workspace.sh
 exec --no-startup-id mopidy
@@ -213,7 +213,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh
 
 # i3lock
-bindsym $mod+l exec i3lock -i ~/Downloads/tys134yp8u341.png -u
+bindsym $mod+l exec i3lock -i /home/kobe/Pictures/Wallpapers/florianne-becker-chouquette-ssnail10small.png -u 
 
 # Open Browser
 bindsym $mod+b exec firefox
