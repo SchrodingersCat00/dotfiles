@@ -13,9 +13,10 @@ call vundle#end()
 filetype plugin indent on
 set number relativenumber
 
+set expandtab
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set autoindent
 
 set hlsearch
 set incsearch
