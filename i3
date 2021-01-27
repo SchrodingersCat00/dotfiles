@@ -183,7 +183,7 @@ exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput 
 exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Accel Speed' 0.854167
 
 # Startup programs
-exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/rain_river.jpg 
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/castle_on_the_hill.webp
 exec --no-startup-id ulauncher --hide-window
 exec --no-startup-id ~/scripts/init_workspace.sh
 exec --no-startup-id mopidy
@@ -221,8 +221,8 @@ bindsym $mod+b exec firefox
 # Youtube mini player
 # bindsym $mod+y floating toggle; resize set 320 200; sticky toggle; move window to position 1600 5;
 # Pin part of the screen to the top right
-bindsym --release $mod+y exec "import /tmp/pin.png && feh /tmp/pin.png"
-for_window [class="^feh$" title="^*/tmp/pin.png$"] floating enable, sticky toggle, move window to position 1600 5;
+bindsym --release $mod+y exec "import /tmp/pin.png && feh -. /tmp/pin.png"
+for_window [title="^*/tmp/pin.png$"] floating enable, resize set 320 200, sticky enable, move window to position 1600 30;
 
 # Flameshot screenshot
 bindsym $mod+c exec flameshot gui
