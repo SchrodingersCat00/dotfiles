@@ -127,3 +127,5 @@ echo "\n"
 
 alias pyth="python3 /home/kobe/UGent/projects/pyth/pyth.py"
 alias vim="nvim"
+
+precmd() { eval "pwd > /tmp/whereami" }
