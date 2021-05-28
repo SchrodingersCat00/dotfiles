@@ -35,7 +35,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec "i3-msg split v && alacritty --working-directory $(cat /tmp/whereami) && i3-msg split h"
 
 # kill focused window
-bindsym $mod+Shift+a kill
+bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -95,28 +95,28 @@ bindsym $mod+q focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+ampersand workspace 1
-bindsym $mod+eacute workspace 2
-bindsym $mod+quotedbl workspace 3
-bindsym $mod+apostrophe workspace 4
-bindsym $mod+parenleft workspace 5
-bindsym $mod+section workspace 6
-bindsym $mod+egrave workspace 7
-bindsym $mod+exclam workspace 8
-bindsym $mod+ccedilla workspace 9
-bindsym $mod+agrave workspace 10
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+ampersand move container to workspace 1; workspace 1
-bindsym $mod+Shift+eacute move container to workspace 2; workspace 2
-bindsym $mod+Shift+quotedbl move container to workspace 3; workspace 3
-bindsym $mod+Shift+apostrophe move container to workspace 4; workspace 4
+bindsym $mod+Shift+1 move container to workspace 1; workspace 1
+bindsym $mod+Shift+2 move container to workspace 2; workspace 2
+bindsym $mod+Shift+3 move container to workspace 3; workspace 3
+bindsym $mod+Shift+4 move container to workspace 4; workspace 4
 bindsym $mod+Shift+5 move container to workspace 5; workspace 5
-bindsym $mod+Shift+section move container to workspace 6; workspace 6
-bindsym $mod+Shift+egrave move container to workspace 7; workspace 7
-bindsym $mod+Shift+exclam move container to workspace 8; workspace 8
-bindsym $mod+Shift+ccedilla move container to workspace 9; workspace 9
-bindsym $mod+Shift+agrave move container to workspace 10; workspace 10
+bindsym $mod+Shift+6 move container to workspace 6; workspace 6
+bindsym $mod+Shift+7 move container to workspace 7; workspace 7
+bindsym $mod+Shift+8 move container to workspace 8; workspace 8
+bindsym $mod+Shift+9 move container to workspace 9; workspace 9
+bindsym $mod+Shift+0 move container to workspace 10; workspace 10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -181,10 +181,11 @@ hide_edge_borders smart
 # Touchpad
 exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Tapping Enabled' 1
 exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Natural Scrolling Enabled' 1 
-exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Accel Speed' 0.854167
+exec_always --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Accel Speed' 0.754167
+# exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Accel Speed' 0.854167
 
 # Startup programs
-exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/castle_on_the_hill.webp
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/fuji.png
 exec --no-startup-id ulauncher --hide-window
 exec --no-startup-id ~/scripts/init_workspace.sh
 exec --no-startup-id mopidy
@@ -220,7 +221,7 @@ bindsym $mod+l exec i3lock -i /home/kobe/Pictures/Wallpapers/florianne-becker-ch
 bindsym $mod+b exec firefox
 
 # Youtube mini player
-# bindsym $mod+y floating toggle; resize set 320 200; sticky toggle; move window to position 1600 5;
+#bindsym $mod+y floating toggle; resize set 320 200; sticky toggle; move window to position 1600 5;
 # Pin part of the screen to the top right
 bindsym --release $mod+y exec "import /tmp/pin.png && feh -. /tmp/pin.png"
 for_window [title="^*/tmp/pin.png$"] floating enable, resize set 320 200, sticky enable, move window to position 1600 30;
