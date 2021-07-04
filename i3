@@ -171,7 +171,7 @@ bindsym $mod+r mode "resize"
 # Gaps
 for_window [class="^.*"] border pixel 0 
 for_window [floating] border full 
-gaps inner 4 
+gaps inner 12 
 gaps outer 0
 # Removes gaps if only one window is present
 smart_gaps on 
@@ -185,12 +185,13 @@ exec_always --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'li
 # exec --no-startup-id xinput set-prop 'ELAN0501:00 04F3:3010 Touchpad' 'libinput Accel Speed' 0.854167
 
 # Startup programs
-exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/fuji.png
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/desert_house.jpg
 exec --no-startup-id ulauncher --hide-window
 exec --no-startup-id ~/scripts/init_workspace.sh
 exec --no-startup-id mopidy
 # exec_always also restarts on mod+r
-exec_always --no-startup-id compton -fz --config ~/.config/compton.conf
+# exec_always --no-startup-id compton -fz --config ~/.config/compton.conf
+exec_always --no-startup-id picom
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id nm-applet
 
